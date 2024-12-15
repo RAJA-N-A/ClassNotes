@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.Logo{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 7px;
+    float: left;
+}
+@font-face{
+    src: url(Orbitron-Bold.ttf);
+    font-family: orb;
+}
+.fa-solid.fa-robot{
+    color: aliceblue;
+}
+.fa-solid.fa-keyboard{
+    color: rgb(0, 54, 155);
+}
+.fa-brands.fa-youtube{
+    color: rgb(114, 0, 0) ;
+}
+.fa-brands.fa-whatsapp{
+    color: rgb(12, 141, 0);
+}
+body{
+    background-color: hsl(0, 0%, 13%);
+}
+.flex{
+    display: flex;
+    border: 2px solid hsl(0, 0%, 13%);
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+.flex2{
+    display: flex;
+    height: 100vh;
+}
+.hl{
+    border-bottom: 1px solid rgb(136, 136, 136);
+}
+.vl{
+    border-left: 1px solid rgb(136, 136, 136);
+    height: 206vh;
+    margin-left: 0px;
+    margin-top: 1px;
+    float: left;
+
+}
+.ClassHeading{
+    text-align: center;
+    padding: 55px 5px;
+    background-color: hsl(0, 0%, 10%);
+    color: aliceblue;
+    font-family: orb;
+    font-size: 3em;
+    
+}
+.Phy{
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 16px;
+    border: 1px solid   rgb(136, 136, 136);
+    border-radius: 17px;
+    box-shadow: 4px 4px 2px rgb(114, 114, 114);
+    border: 40%;
+    width: 350px;
+    font-family: orb;
+    overflow: hidden;
+    position: sticky;
+    animation-name: grow;
+    animation-duration: 2s; 
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(100px)}
+}
+@keyframes slideRight{
+    to{transform: translateX(100px);}
+}
+@keyframes rotate{
+    100%{transform: rotate(360deg);}
+}
+@keyframes grow{
+    from{transform: scale(0);}
+    30%{transform: scale(1.07,1.07);}
+}
+.Phy img{
+    width: 100%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    height: auto;
+}
+.Phy .p1 img{
+    width: 100%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    height: 150px;
+}
+.Phy:hover{
+    border: 1px solid  rgb(99, 0, 0);
+    position: sticky;
+    overflow: hidden;
+    transform: scale(1.07,1.07);
+    transition-duration: 0.5s;
+}
+#Dr{
+    display: inline-block;
+    margin-top: 7px;
+}
+#Dr button{
+    padding: 15px 25px;
+    text-align: center;
+    background-color: hsl(0, 0%, 13%);
+    color: hsl(0, 0%, 89%);
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    font-family: orb;
+    border: none;
+    
+}
+#Dr button:hover{
+    background-color: hsl(0, 0%, 17%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    padding: 15px 25px;
+    transform: scale(1.07,1.07);
+    transition-duration: 0.5s;
+}
+#Dr button:active{
+    background-color: rgb(172, 168, 168);
+}
+#ClassDesc{
+    text-align: center;
+    padding: 5%;
+    color:aliceblue
+}
+.Bar{
+    display: block;
+    background-color: hsl(0, 0%, 13%);
+    border-radius: 5px;
+    height: 100vh;
+    width: 150px;
+    float: left;
+}
+.Notes button{
+    display:block;
+    font-size: 25px; background-color: gray; color: black; border-radius: 25px;
+    margin: 25px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    width: 400px;
+    
+}
+.Notes button:hover{
+    cursor: pointer;
+    transform: scale(1.07,1.07);
+    transition-duration: 0.5s;
+}
+#FL{
+    position: sticky;
+    margin-top: 70px;
+    border-bottom: 1px solid rgb(136, 136, 136);
+}
+#ftr{
+    margin-top: 70px;
+}
+
